@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E810FC672B20451C00E3046B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E810FC662B20451C00E3046B /* FirebaseAnalytics */; };
+		E810FC692B20451C00E3046B /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E810FC682B20451C00E3046B /* FirebaseAnalyticsSwift */; };
+		E810FC6B2B20451C00E3046B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = E810FC6A2B20451C00E3046B /* FirebaseDatabase */; };
+		E810FC6D2B20451C00E3046B /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E810FC6C2B20451C00E3046B /* FirebaseDatabaseSwift */; };
+		E810FC6F2B20463B00E3046B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E810FC6E2B20463B00E3046B /* GoogleService-Info.plist */; };
+		E891B10D2B1F99E100814341 /* ProyekWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E891B10C2B1F99E100814341 /* ProyekWalletApp.swift */; };
+		E891B10F2B1F99E100814341 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E891B10E2B1F99E100814341 /* ContentView.swift */; };
+		E891B1112B1F99E300814341 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E891B1102B1F99E300814341 /* Assets.xcassets */; };
+		E891B1142B1F99E300814341 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E891B1132B1F99E300814341 /* Preview Assets.xcassets */; };
+		E891B11B2B1F9B2D00814341 /* CreditCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E891B11A2B1F9B2D00814341 /* CreditCardType.swift */; };
+		E891B11D2B1F9B5900814341 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E891B11C2B1F9B5900814341 /* CreditCard.swift */; };
+		E891B1202B1F9BAA00814341 /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = E891B11F2B1F9BAA00814341 /* SwiftUIFontIcon */; };
+		E8C9E30E2B1FC61700E98DB8 /* CreditCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C9E30D2B1FC61700E98DB8 /* CreditCardViewModel.swift */; };
+		E8C9E3122B1FDCAE00E98DB8 /* AddCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C9E3112B1FDCAE00E98DB8 /* AddCardView.swift */; };
+		E8C9E3142B1FDCE400E98DB8 /* EditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C9E3132B1FDCE400E98DB8 /* EditCardView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E810FC6E2B20463B00E3046B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E891B1092B1F99E100814341 /* ProyekWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyekWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E891B10C2B1F99E100814341 /* ProyekWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyekWalletApp.swift; sourceTree = "<group>"; };
+		E891B10E2B1F99E100814341 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E891B1102B1F99E300814341 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E891B1132B1F99E300814341 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E891B11A2B1F9B2D00814341 /* CreditCardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardType.swift; sourceTree = "<group>"; };
+		E891B11C2B1F9B5900814341 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		E8C9E30D2B1FC61700E98DB8 /* CreditCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardViewModel.swift; sourceTree = "<group>"; };
+		E8C9E3112B1FDCAE00E98DB8 /* AddCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardView.swift; sourceTree = "<group>"; };
+		E8C9E3132B1FDCE400E98DB8 /* EditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E891B1062B1F99E100814341 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E810FC6D2B20451C00E3046B /* FirebaseDatabaseSwift in Frameworks */,
+				E810FC692B20451C00E3046B /* FirebaseAnalyticsSwift in Frameworks */,
+				E810FC672B20451C00E3046B /* FirebaseAnalytics in Frameworks */,
+				E810FC6B2B20451C00E3046B /* FirebaseDatabase in Frameworks */,
+				E891B1202B1F9BAA00814341 /* SwiftUIFontIcon in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E891B1002B1F99E000814341 = {
+			isa = PBXGroup;
+			children = (
+				E891B10B2B1F99E100814341 /* ProyekWallet */,
+				E891B10A2B1F99E100814341 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E891B10A2B1F99E100814341 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E891B1092B1F99E100814341 /* ProyekWallet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E891B10B2B1F99E100814341 /* ProyekWallet */ = {
+			isa = PBXGroup;
+			children = (
+				E810FC6E2B20463B00E3046B /* GoogleService-Info.plist */,
+				E891B10C2B1F99E100814341 /* ProyekWalletApp.swift */,
+				E891B10E2B1F99E100814341 /* ContentView.swift */,
+				E891B1102B1F99E300814341 /* Assets.xcassets */,
+				E891B1122B1F99E300814341 /* Preview Content */,
+				E891B11A2B1F9B2D00814341 /* CreditCardType.swift */,
+				E891B11C2B1F9B5900814341 /* CreditCard.swift */,
+				E8C9E30D2B1FC61700E98DB8 /* CreditCardViewModel.swift */,
+				E8C9E3112B1FDCAE00E98DB8 /* AddCardView.swift */,
+				E8C9E3132B1FDCE400E98DB8 /* EditCardView.swift */,
+			);
+			path = ProyekWallet;
+			sourceTree = "<group>";
+		};
+		E891B1122B1F99E300814341 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E891B1132B1F99E300814341 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E891B1082B1F99E100814341 /* ProyekWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E891B1172B1F99E300814341 /* Build configuration list for PBXNativeTarget "ProyekWallet" */;
+			buildPhases = (
+				E891B1052B1F99E100814341 /* Sources */,
+				E891B1062B1F99E100814341 /* Frameworks */,
+				E891B1072B1F99E100814341 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProyekWallet;
+			packageProductDependencies = (
+				E891B11F2B1F9BAA00814341 /* SwiftUIFontIcon */,
+				E810FC662B20451C00E3046B /* FirebaseAnalytics */,
+				E810FC682B20451C00E3046B /* FirebaseAnalyticsSwift */,
+				E810FC6A2B20451C00E3046B /* FirebaseDatabase */,
+				E810FC6C2B20451C00E3046B /* FirebaseDatabaseSwift */,
+			);
+			productName = ProyekWallet;
+			productReference = E891B1092B1F99E100814341 /* ProyekWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E891B1012B1F99E000814341 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					E891B1082B1F99E100814341 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = E891B1042B1F99E000814341 /* Build configuration list for PBXProject "ProyekWallet" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E891B1002B1F99E000814341;
+			packageReferences = (
+				E891B11E2B1F9BAA00814341 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */,
+				E810FC652B20451C00E3046B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = E891B10A2B1F99E100814341 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E891B1082B1F99E100814341 /* ProyekWallet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E891B1072B1F99E100814341 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E891B1142B1F99E300814341 /* Preview Assets.xcassets in Resources */,
+				E891B1112B1F99E300814341 /* Assets.xcassets in Resources */,
+				E810FC6F2B20463B00E3046B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E891B1052B1F99E100814341 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E891B11D2B1F9B5900814341 /* CreditCard.swift in Sources */,
+				E891B11B2B1F9B2D00814341 /* CreditCardType.swift in Sources */,
+				E8C9E3142B1FDCE400E98DB8 /* EditCardView.swift in Sources */,
+				E8C9E3122B1FDCAE00E98DB8 /* AddCardView.swift in Sources */,
+				E891B10F2B1F99E100814341 /* ContentView.swift in Sources */,
+				E8C9E30E2B1FC61700E98DB8 /* CreditCardViewModel.swift in Sources */,
+				E891B10D2B1F99E100814341 /* ProyekWalletApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E891B1152B1F99E300814341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E891B1162B1F99E300814341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E891B1182B1F99E300814341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ProyekWallet/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = id.petra.ProyekWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E891B1192B1F99E300814341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ProyekWallet/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = id.petra.ProyekWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E891B1042B1F99E000814341 /* Build configuration list for PBXProject "ProyekWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E891B1152B1F99E300814341 /* Debug */,
+				E891B1162B1F99E300814341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E891B1172B1F99E300814341 /* Build configuration list for PBXNativeTarget "ProyekWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E891B1182B1F99E300814341 /* Debug */,
+				E891B1192B1F99E300814341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E810FC652B20451C00E3046B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 10.18.0;
+			};
+		};
+		E891B11E2B1F9BAA00814341 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huybuidac/SwiftUIFontIcon.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E810FC662B20451C00E3046B /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E810FC652B20451C00E3046B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		E810FC682B20451C00E3046B /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E810FC652B20451C00E3046B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		E810FC6A2B20451C00E3046B /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E810FC652B20451C00E3046B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		E810FC6C2B20451C00E3046B /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E810FC652B20451C00E3046B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		E891B11F2B1F9BAA00814341 /* SwiftUIFontIcon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E891B11E2B1F9BAA00814341 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */;
+			productName = SwiftUIFontIcon;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E891B1012B1F99E000814341 /* Project object */;
+}
