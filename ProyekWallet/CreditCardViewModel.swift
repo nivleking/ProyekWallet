@@ -16,7 +16,10 @@ class CreditCardViewModel: ObservableObject {
     private let ref = Database.database().reference()
 
     init() {
+        //UserDefaults
 //        loadCreditCards()
+        
+        //Firebase
         loadCreditCardsFromFirebase()
     }
     
@@ -77,7 +80,6 @@ class CreditCardViewModel: ObservableObject {
             let data = try JSONEncoder().encode(newCard)
             let cardDictionary = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
 
-            // Unwrap the optional cardDictionary using optional binding
             if let unwrappedCardDictionary = cardDictionary {
                 cardRef.updateChildValues(unwrappedCardDictionary) { error, _ in
                     if let error = error {
@@ -93,8 +95,6 @@ class CreditCardViewModel: ObservableObject {
             print("Error encoding or updating credit card in Firebase: \(error)")
         }
     }
-
-    
 
     func saveCreditCards() {
         do {
@@ -118,9 +118,9 @@ class CreditCardViewModel: ObservableObject {
     func addCreditCard(_ card: CreditCard) {
         let cardWithKey = CreditCard(cardType: card.cardType, bankName: card.bankName, urlCompany: card.urlCompany, cardHolderName: card.cardHolderName, email: card.email, companyName: card.companyName, phone: card.phone)
 
-            creditCards.append(cardWithKey)
-            saveCreditCards()
-            saveCreditCardToFirebase(cardWithKey)
+        creditCards.append(cardWithKey)
+        saveCreditCards()
+        saveCreditCardToFirebase(cardWithKey)
     }
     
     
@@ -130,10 +130,6 @@ class CreditCardViewModel: ObservableObject {
             deleteCreditCardFromFirebase(card)
             saveCreditCards()
         }
-    }
-    
-    func editCreditCard(_ card: CreditCard) {
-         currentEditingCard = card
     }
     
     func updateCreditCard(_ existingCard: CreditCard, with newCard: CreditCard) {

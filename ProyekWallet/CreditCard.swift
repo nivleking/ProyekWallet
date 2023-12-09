@@ -19,19 +19,19 @@ struct CreditCard : Hashable, Decodable, Encodable{
     var phone : String
     
     init(cardType: CreditCardType, bankName: String, urlCompany: String, cardHolderName: String, email: String, companyName: String, phone: String) {
-           self.uniqueKey = UUID().uuidString
-            
-            let cardTypes: [CreditCardType] = [.amex, .visa, .masterCard]
-            let randomCardType = cardTypes.randomElement() ?? .visa
-            self.cardType = randomCardType
-    
-           self.bankName = bankName
-           self.urlCompany = urlCompany
-           self.cardHolderName = cardHolderName
-           self.email = email
-           self.companyName = companyName
-           self.phone = phone
-       }
+       self.uniqueKey = UUID().uuidString
+        
+        let cardTypes: [CreditCardType] = [.amex, .visa, .masterCard]
+        let randomCardType = cardTypes.randomElement() ?? .visa
+        self.cardType = randomCardType
+
+       self.bankName = bankName
+       self.urlCompany = urlCompany
+       self.cardHolderName = cardHolderName
+       self.email = email
+       self.companyName = companyName
+       self.phone = phone
+    }
 }
 
 //let sampleCards: [CreditCard] = [

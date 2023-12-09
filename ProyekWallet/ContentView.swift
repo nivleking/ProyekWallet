@@ -42,6 +42,7 @@ struct ContentView: View {
                 .padding(.horizontal, 16)
             }
             Spacer()
+//            Spacer()
         }
         .sheet(isPresented: $isAddingCard) {
             AddCardView(viewModel: viewModel, isPresented: $isAddingCard)
