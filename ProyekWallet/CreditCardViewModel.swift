@@ -17,10 +17,10 @@ class CreditCardViewModel: ObservableObject {
 
     init() {
         //UserDefaults
-//        loadCreditCards()
+        loadCreditCards()
         
         //Firebase
-        loadCreditCardsFromFirebase()
+//        loadCreditCardsFromFirebase()
     }
     
     func saveCreditCardToFirebase(_ card: CreditCard) {
